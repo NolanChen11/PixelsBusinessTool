@@ -1,0 +1,72 @@
+
+@media screen and (max-width: 800px) {
+    .logoWrapper{
+        padding-top:10%;
+
+        width:100%;
+        text-align: center;
+        
+    }
+    .logo{
+        background: linear-gradient(128deg, #8C9F9E 10%, #72884C 20.96%, #5A5A5A 50%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Poppins;
+        font-size: 3.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .linkWrapper{
+        padding-top:10%;
+        width:100%;
+        text-align: center;
+        
+    }
+    .link1{
+        width: 20.375rem;
+        height: 13.1875rem;
+        flex-shrink: 0;
+        border-radius: 1.8125rem;
+        background: #138EFF;
+        display:inline-block;
+    }
+    .link2{
+        width: 20.375rem;
+        height: 13.1875rem;
+        flex-shrink: 0;
+        border-radius: 1.8125rem;
+        background: #6C5438;
+        display:inline-block;
+    }
+    .arrow{
+        background-color: transparent;
+        margin-top:27%;
+        stroke-width: 5px;
+        stroke: #FFF;
+        width: 18%;
+        height: auto;
+        flex-shrink: 0;
+    }
+    .infoLink{
+        width: 20.375rem;
+        height: 6.125rem;
+        flex-shrink: 0;
+        border-radius: 1.8125rem;
+        background: #32DAF1;
+        display:inline-block;
+        vertical-align: center;
+    }
+    .infoText{
+        margin-top:1.19rem;
+        
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+}
