@@ -92,17 +92,19 @@
         width: 15.375rem;
         height: 19.6875rem;
         flex-shrink: 0;
-        /* float:left; */
+        float:left;
         display:block;
+        z-index: -1;
     }
     .dogImage{
-        margin-top: -20rem;
-        margin-left:9.75rem;
+        margin-top: -18rem;
+        margin-right:-5rem;
         width: 18.3125rem;
         height: 32.25rem;
         flex-shrink: 0;
-        float:left;
+        float:right; 
         display:block;
+        z-index:10;
     }
 
 }
