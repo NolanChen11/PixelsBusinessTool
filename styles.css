@@ -8,7 +8,7 @@
         
     }
     .logo{
-        background: linear-gradient(128deg, #8C9F9E 10%, #72884C 20.96%, #5A5A5A 50%);
+        background: linear-gradient(128deg, #d2dddd 18%, #72884C 40.96%, #5A5A5A 50%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -67,6 +67,42 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+    }
+    .innerWrapper{
+
+        width:100%;
+        text-align: center;
+    }
+    .fishWrapper{
+        
+        flex-shrink: 0;
+    }
+    .fishImage{
+        margin-left:11.5rem;
+        margin-right:2.62rem;
+        width: 10.25rem;
+        height: 20.8125rem;
+        position:sticky;
+        display:block;
+        z-index: -1;
+    }
+    .alliImage{
+        margin-top: -10rem;
+        margin-left:0rem;
+        width: 15.375rem;
+        height: 19.6875rem;
+        flex-shrink: 0;
+        /* float:left; */
+        display:block;
+    }
+    .dogImage{
+        margin-top: -20rem;
+        margin-left:9.75rem;
+        width: 18.3125rem;
+        height: 32.25rem;
+        flex-shrink: 0;
+        float:left;
+        display:block;
     }
 
 }
