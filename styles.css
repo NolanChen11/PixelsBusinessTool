@@ -88,7 +88,7 @@
     }
     .alliImage{
         margin-top: -10rem;
-        margin-left:0rem;
+        margin-left:-2rem;
         width: 15.375rem;
         height: 19.6875rem;
         flex-shrink: 0;
@@ -106,5 +106,45 @@
         display:block;
         z-index:10;
     }
+    .buttonWrapper{
+        padding-top:5%;
+        width:100%;
+        text-align: center;
+        
+    }
+    .button{
+        width: 5.4375rem;
+        height: 5.4375rem;
+        transform: rotate(90deg);
+        flex-shrink: 0;
+        fill: #000;
+        display:inline-block;
+        position:relative; 
+        
+    }
+    .backbutton{
+        width:100%;
+    }
+    .backarrow{
+        margin-top: -50%;
+        margin-right: -50%;
+        width: 1.65625rem;
+        height: 1.65625rem;
+        transform: rotate(-90deg);
+        flex-shrink: 0;
+        stroke-width: 3px;
+        stroke: #030303;
+        /* position:absolute;  */
+        
+    }
+    .gallery{
+        
+        width:100%;
+        text-align: center;
+    }
+    .resultImage{
+        width:90%;
+    }
+    
 
 }
