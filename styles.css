@@ -12,7 +12,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family: Poppins;
+        font-family: 'Poppins', sans-serif;
         font-size: 3.75rem;
         font-style: normal;
         font-weight: 700;
@@ -62,7 +62,7 @@
         margin-top:1.19rem;
         
         color: #FFF;
-        font-family: Poppins;
+        font-family: 'Poppins', sans-serif;
         font-size: 2.5rem;
         font-style: normal;
         font-weight: 700;
