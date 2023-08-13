@@ -113,27 +113,32 @@
         
     }
     .button{
-        width: 5.4375rem;
-        height: 5.4375rem;
+        width: 20%;
+        height: 20%;
         transform: rotate(90deg);
         flex-shrink: 0;
         fill: #000;
         display:inline-block;
-        position:relative; 
+        text-align: center;
+        
         
     }
     .backbutton{
         width:100%;
+        display:inline-block;
+        
     }
     .backarrow{
-        margin-top: -50%;
-        margin-right: -50%;
-        width: 1.65625rem;
-        height: 1.65625rem;
-        transform: rotate(-90deg);
+        transform: rotate(180deg);
+        left:30%;
+        bottom:30%;
+        width: 40%;
+        height: 40%;
+        
         flex-shrink: 0;
         stroke-width: 3px;
-        stroke: #030303;
+        position:absolute;
+        /* stroke: #030303; */
         /* position:absolute;  */
         
     }
