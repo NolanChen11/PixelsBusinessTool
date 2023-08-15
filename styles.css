@@ -8,7 +8,7 @@
         
     }
     .logo{
-        background: linear-gradient(128deg, #d2dddd 18%, #72884C 40.96%, #5A5A5A 50%);
+        /* background: linear-gradient(128deg, #d2dddd 18%, #72884C 40.96%, #5A5A5A 50%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -16,7 +16,8 @@
         font-size: 3.75rem;
         font-style: normal;
         font-weight: 700;
-        line-height: normal;
+        line-height: normal; */
+        width:60%;
     }
     .linkWrapper{
         padding-top:10%;
@@ -125,7 +126,7 @@
     }
     .backbutton{
         width:100%;
-        display:inline-block;
+        display:block;
         
     }
     .backarrow{
@@ -152,4 +153,28 @@
     }
     
 
+}
+
+@media screen and (min-width: 800px) {
+    .logoWrapper{
+        padding-top:10%;
+        width:100%;
+        text-align: center;
+    }
+    .logo{
+        width:20rem;
+    }
+    .linkWrapper{
+        padding-top:10%;
+        width:100%;
+        text-align: center;
+    }
+    .link1{
+        width: 20.375rem;
+        height: 13.1875rem;
+        flex-shrink: 0;
+        border-radius: 1.8125rem;
+        background: #138EFF;
+        display:inline-block;
+    }
 }
