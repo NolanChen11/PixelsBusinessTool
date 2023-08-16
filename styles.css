@@ -1,11 +1,11 @@
 
 @media screen and (max-width: 800px) {
     .logoWrapper{
-        padding-top:10%;
-
+        padding-top:0%;
+        margin-bottom:0%;
         width:100%;
         text-align: center;
-        
+         
     }
     .logo{
         /* background: linear-gradient(128deg, #d2dddd 18%, #72884C 40.96%, #5A5A5A 50%);
@@ -17,32 +17,63 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal; */
-        width:60%;
-    }
-    .linkWrapper1{
-        padding-top:10%;
         width:100%;
+    }
+    .container{
+        /* background-image: url("./images/woodboard.svg"); */
+        margin-top:0px;
+        width:100%;
+        margin-right:20px;
         text-align: center;
+        
+    }
+    .container .woodboard{
+        margin-top: -30px;
+        width:90%;
+        display:inline-flex;
+        z-index:-1;
+    }
+    .container .logo{
+        margin-top:10px;
+        width:60%;
+        position:absolute;
+        left:20%;
+        top:25%;
+        z-index: 1;
+    }
+    .container .linkWrapper1{
+        /* padding-top:20rem; */
+        left:40px;
+        width: 285px;
+        height: 266px;
+        text-align: center;
+        position:absolute;
+        top:10rem;
+        z-index:1;
         
     }
     .linkWrapper2{
-        padding-top:10%;
+        padding-top:20%;
         width:100%;
         text-align: center;
+        position:absolute;
+
+
         
     }
     .linkWrapper{
+        width: 20.375rem;
+        height: 13.1875rem;
         padding-top:10%;
-        width:100%;
+        
         text-align: center;
     }
     .link1{
-        width: 20.375rem;
-        height: 13.1875rem;
-        flex-shrink: 0;
-        border-radius: 1.8125rem;
-        background: #138EFF;
-        display:inline-block;
+        
+        width:100%;
+        /* border-radius: 1.8125rem; */
+        /* background: #138EFF; */
+        display:inline-flex;
     }
     .link2{
         width: 20.375rem;
