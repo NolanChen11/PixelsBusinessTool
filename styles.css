@@ -269,56 +269,89 @@
     .buttonWrapper{
         width:10%;
         text-align: center;
-        float:left;
+        /* float:left; */
+        display:inline-flex;
         
     }
     .button{
         width: 100%;
         height: 100%;
-        transform: rotate(90deg);
         flex-shrink: 0;
         fill: #000;
-        display:inline-block;
+        display:block;
         text-align: center;
         
     }
     .backbutton{
-        width:100%;
-        display:block;
+        width:4.5rem;
+        height:4.5rem;
+        margin-left:2rem;
+        margin-top:2rem;
+        position:fixed; 
+        /* display:inline-flex; */
         
     }
     .backarrow{
         transform: rotate(180deg);
-        left:30%;
-        bottom:30%;
-        width: 40%;
-        height: 40%;
-        
-        flex-shrink: 0;
-        stroke-width: 3px;
-        position:absolute;
+
+        width: 1.8rem;
+        height: 1.8rem;
+        left:3.3rem;
+        top:3.5rem;
+        position:relative; 
         /* stroke: #030303; */
         /* position:absolute;  */
         
     }
-    .gallery{
-        width:30%;
+    /* .gallery{
+        width:100%;
+        text-align: center;
+        display:flex;
+        transform: rotate(-90deg);
         
-        /* text-align: center; */
-        /* display:inline-flex; */
-        transform: rotate(270deg);
-        float:left;
-    }
+        margin-top: -300px;
+    } */
 
     .resultImage{
-
+        float:right;
+        margin-right:30%;
         display:inline-flex;
-        width:100%;
+        transform: rotate(-90deg);
+        width:50%;
     }
 
     .row{
-        content:"";
-        display:table;
-        clear:both;
+        display:flex;
+        align-items: left;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .innerWrapper{
+
+        width:100%;
+        text-align: center;
+    }
+    .fishWrapper{
+        
+        flex-shrink: 0;
+    }
+    .fishImage{
+        width: 20%;
+        /* height: 47.875rem; */
+        display:inline-flex;
+        z-index: -1;
+    }
+    .alliImage{
+        width: 23%;
+        flex-shrink: 0;
+        display:inline-flex;
+        margin-top:60px;
+        z-index: -1;
+    }
+    .dogImage{
+        width: 20%;
+        flex-shrink: 0; 
+        display:inline-flex;
+        z-index:10;
     }
 }
