@@ -8,37 +8,35 @@
          
     }
     .logo{
-        /* background: linear-gradient(128deg, #d2dddd 18%, #72884C 40.96%, #5A5A5A 50%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-family: 'Poppins', sans-serif;
-        font-size: 3.75rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal; */
-        width:100%;
+        width:398px;
+        min-width:380px;
     }
     .container{
-        /* background-image: url("./images/woodboard.svg"); */
         margin-top:0px;
         width:100%;
         margin-right:20px;
         text-align: center;
         
     }
-    .container .woodboard{
+    .tableboard{
         margin-top: -30px;
-        width:90%;
+        width:373px;
         display:inline-flex;
         z-index:-1;
     }
-    .container .logo{
-        margin-top:10px;
-        width:60%;
-        position:absolute;
-        left:20%;
-        top:25%;
+    .woodboard{
+        margin-top: -60px;
+        width:373px;
+        display:inline-flex;
+        z-index:-1;
+    }
+    .title{
+        margin-top:px;
+        width:133px;
+        position:relative;
+        display:inline-flex;
+        /* left:30%; */
+        top:-75px;
         z-index: 1;
     }
     .container .linkWrapper1{
@@ -65,14 +63,12 @@
         width: 20.375rem;
         height: 13.1875rem;
         padding-top:10%;
-        
+        position:relative;
         text-align: center;
     }
     .link1{
-        
-        width:100%;
-        /* border-radius: 1.8125rem; */
-        /* background: #138EFF; */
+        width: 260.988px;
+        height: 140px;
         display:inline-flex;
     }
     .link2{
