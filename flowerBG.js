@@ -59,11 +59,15 @@ class flower{
         this.isDead = false;
     }
     show(){
+        
         image(flowerImage, this.position.x, this.position.y, this.size, this.size);
         this.age++;
+
+        let added = false;
         if(mouseX > this.position.x && mouseX < this.position.x + this.size && mouseY > this.position.y && mouseY < this.position.y + this.size){
-            if(mouseIsPressed){
+            if(mouseIsPressed && !added){
                 flowerSys.add(mouseX, mouseY);
+                added = true;
             }
         }
         // if(mouseX > this.position.x && mouseX < this.position.x + this.size && mouseY > this.position.y && mouseY < this.position.y + this.size){
