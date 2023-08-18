@@ -109,41 +109,41 @@
         line-height: normal;
     }
     .innerWrapper{
-
         width:100%;
         text-align: center;
+        
     }
     .fishWrapper{
         
         flex-shrink: 0;
     }
     .fishImage{
-        margin-left:11.5rem;
-        margin-right:2.62rem;
-        width: 10.25rem;
-        height: 20.8125rem;
-        position:sticky;
-        display:block;
+        right:-30px;
+        top: -400px;
+        width: 152px;
+        height: 310px;
+        /* position:sticky; */
+        /* display:inline-flex; */
         z-index: -1;
     }
     .alliImage{
         margin-top: -10rem;
         margin-left:-2rem;
-        width: 15.375rem;
-        height: 19.6875rem;
+        width:226px;
+        height: 290px;
         flex-shrink: 0;
         float:left;
-        display:block;
+        /* display:block; */
         z-index: -1;
     }
     .dogImage{
         margin-top: -18rem;
         margin-right:-5rem;
-        width: 18.3125rem;
-        height: 32.25rem;
+        width: 246px;
+        height: 372px;
         flex-shrink: 0;
         float:right; 
-        display:block;
+        /* display:block; */
         z-index:10;
     }
     .buttonWrapper{
