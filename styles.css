@@ -8,7 +8,7 @@
          
     }
     .logo{
-        width:378px;
+        width:330px;
         display:inline-flex;
         /* min-width:380px; */
     }
@@ -21,13 +21,14 @@
     }
     .tableboard{
         margin-top: -30px;
-        width:373px;
+        width:330px;
         display:inline-flex;
         z-index:-1;
     }
     .woodboard{
-        margin-top: -60px;
-        width:373px;
+        margin-top: -1120px;
+        margin-right: 20px;
+        width:370px;
         display:inline-flex;
         z-index:-1;
     }
@@ -37,7 +38,7 @@
         position:relative;
         display:inline-flex;
         /* left:30%; */
-        top:-75px;
+        top:-70px;
         z-index: 1;
     }
     .linkWrapper1{
@@ -67,7 +68,7 @@
         text-align: center;
     }
     .link1{
-        width: 260.988px;
+        width: 230.988px;
         height: 140px;
         display:inline-flex;
     }
