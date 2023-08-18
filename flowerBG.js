@@ -2,7 +2,7 @@ var canvas;
 let flowerImage;
 let flowerSys;
 function preload(){
-    flowerImage = loadImage('images/flower.png');
+    flowerImage = loadImage("./images/flower.png");
 }
 function setup(){
     canvas = createCanvas(windowWidth, windowHeight);
@@ -24,6 +24,7 @@ class flowerSystem{
     }
     run(){ 
         for(let i = 0; i < this.flowers.length; i++){
+            this.flowers[i].update();
             this.flowers[i].show();
         }
     }   
