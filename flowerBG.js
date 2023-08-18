@@ -9,7 +9,7 @@ function setup(){
     canvas.position(0,0);
     canvas.style('z-index','-1');
     // flowerImage = loadImage('images/flower.png');
-    flowerSys = new flowerSystem(6);
+    flowerSys = new flowerSystem(20);
 }
 function draw(){
     background(255);
@@ -39,7 +39,7 @@ class flower{
         this.velocity = createVector(random(-1, 1), random(-1, 1));
     }
     show(){
-        image(flowerImage, this.x, this.y, this.size, this.size);
+        image(flowerImage, this.position.x, this.position.y, this.size, this.size);
     }
     update(){
         this.position.add(this.velocity);
