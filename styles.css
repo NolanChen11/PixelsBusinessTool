@@ -8,7 +8,7 @@
          
     }
     .logo{
-        width:330px;
+        width:370px;
         display:inline-flex;
         /* min-width:380px; */
     }
@@ -33,13 +33,13 @@
         z-index:-1;
     }
     .title{
-        margin-top:px;
-        width:133px;
+        /* margin-top:0px; */
+        width:200x;
         position:relative;
         display:inline-flex;
         /* left:30%; */
-        top:-70px;
-        z-index: 1;
+        top:-80px;
+        z-index: 2;
     }
     .linkWrapper1{
         /* padding-top:20rem; */
