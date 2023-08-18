@@ -39,7 +39,7 @@ class flowerSystem{
                 this.flowers.push(new flower(random(width),random(height)));
             }
         }
-        if(this.flowers.length > 30){
+        if(this.flowers.length > 25){
             
             this.flowers.splice(0,1);
         }
