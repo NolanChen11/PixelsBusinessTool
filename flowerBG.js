@@ -35,7 +35,7 @@ class flower{
         this.x = random(width);
         this.y = random(height);
         this.position= createVector(this.x, this.y);
-        this.size = random(10, 20);
+        this.size = random(30, 50);
         this.velocity = createVector(random(-1, 1), random(-1, 1));
     }
     show(){
