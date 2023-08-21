@@ -1,16 +1,24 @@
+//background flowers for pixels business tool's webpage.
+//Coding: Liming (Nolan) Chen
+//Artists: Sunny Satpathy
+//UI: Penye (Jeffrey) Yang
+
+let setupHeight; 
 var canvas;
-let flowerImage;
-let flowerSys;
+let flowerImage; 
+let flowerSys; 
 
 
 function preload(){
-    flowerImage = loadImage("./images/flower.png");
+    flowerImage = loadImage("./images/flower.png"); // load the image of flower
+    setupHeight = document.body.scrollHeight; // set the height of canvas to the height of document's body
 }
+
 function setup(){
-    canvas = createCanvas(windowWidth, 1700);
+    canvas = createCanvas(windowWidth, setupHeight);
     canvas.position(0,0);
     canvas.style('z-index','-1');
-    flowerSys = new flowerSystem(20);
+    flowerSys = new flowerSystem(20); //initialize the flowerSystem with 20 flowers.
 }
 function draw(){
     background(255);
@@ -21,8 +29,7 @@ function windowResized() {
 }
 
 
-
-
+//the system that store, run, manage and remove flowers. 
 class flowerSystem{
     constructor(n){
         this.flowers = [];
@@ -30,6 +37,8 @@ class flowerSystem{
             this.flowers.push(new flower(random(width),random(height)));
         }
     }
+
+    //run the system, if a flower reaches its maximun age, delete it and add a new one.
     run(){ 
         for(let i = 0; i < this.flowers.length; i++){
             this.flowers[i].update();
@@ -40,11 +49,14 @@ class flowerSystem{
             }
         }
     }
+    
+    //add a flower at (x, y). 
     add(x, y){
         this.flowers.push(new flower(x, y));
     }   
 }
 
+//flower object that moves and can add flowers to its parent system. 
 class flower{
     constructor(x,y){
         this.position= createVector(x, y);
@@ -57,11 +69,16 @@ class flower{
     show(){
         
         image(flowerImage, this.position.x, this.position.y, this.size, this.size);
+        
         this.age++;
 
+        //if hasn't added flower for this iteration, and mouse is pressed on the flower.
         let added = false;
         if(mouseX > this.position.x && mouseX < this.position.x + this.size && mouseY > this.position.y && mouseY < this.position.y + this.size && mouseIsPressed && !added){
-            if (flowerSys.flowers.length<25){
+            
+            //if leq to 25 flowers in the system, add one to it.
+            //if there are more than 25 flowers, add one and delete the first one. 
+            if (flowerSys.flowers.length <= 25){
                 flowerSys.add(mouseX, mouseY);
                 added = true;
             }else{
@@ -71,6 +88,8 @@ class flower{
             }
         }
     }
+
+    // add velocity to position to move. Bounce when reaches the boundary.
     update(){
         this.position.add(this.velocity);
         if(this.position.x > windowWidth || this.position.x < 0){
