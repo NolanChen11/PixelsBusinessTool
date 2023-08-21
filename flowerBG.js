@@ -39,10 +39,6 @@ class flowerSystem{
                 this.flowers.push(new flower(random(width),random(height)));
             }
         }
-        if(this.flowers.length > 25){
-            
-            this.flowers.splice(0,1);
-        }
     }
     add(x, y){
         this.flowers.push(new flower(x, y));
@@ -64,24 +60,23 @@ class flower{
         this.age++;
 
         let added = false;
-        if(mouseX > this.position.x && mouseX < this.position.x + this.size && mouseY > this.position.y && mouseY < this.position.y + this.size){
-            if(mouseIsPressed && !added){
+        if(mouseX > this.position.x && mouseX < this.position.x + this.size && mouseY > this.position.y && mouseY < this.position.y + this.size && mouseIsPressed && !added){
+            if (flowerSys.flowers.length<25){
                 flowerSys.add(mouseX, mouseY);
+                added = true;
+            }else{
+                flowerSys.add(mouseX, mouseY);
+                flowerSys.flowers.splice(0,1);
                 added = true;
             }
         }
-        // if(mouseX > this.position.x && mouseX < this.position.x + this.size && mouseY > this.position.y && mouseY < this.position.y + this.size){
-        //     for(let i = 0; i<10; i++){
-        //         flowerSys.add(new flower(this.position.x, this.position.y));
-        //     }
-        // }
     }
     update(){
         this.position.add(this.velocity);
-        if(this.position.x > width || this.position.x < 0){
+        if(this.position.x > windowWidth || this.position.x < 0){
             this.velocity.x *= -1;
         }
-        if(this.position.y > height || this.position.y < 0){
+        if(this.position.y > windowHeight || this.position.y < 0){
             this.velocity.y *= -1;
         }
         if(this.age > this.lifeSpan){
