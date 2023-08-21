@@ -11,7 +11,7 @@ let flowerSys;
 
 function preload(){
     flowerImage = loadImage("./images/flower.png"); // load the image of flower
-    setupHeight = document.body.scrollHeight; // set the height of canvas to the height of document's body
+    setupHeight = document.documentElement.scrollHeight; // set the height of canvas to the height of document.
 }
 
 function setup(){
