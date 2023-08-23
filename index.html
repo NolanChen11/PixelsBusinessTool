@@ -11,6 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <script src="./scripts/p5.min.js"></script>
     <script src="./scripts/flowerBG.js"></script>
+    <script>
+        function fullscreenImage(){
+            var elem = document.getElementById("originalImage");
+            elem.addEventListener('click', function(e){ 
+                if(document.fullscreenElement){ 
+                    document.exitFullscreen() 
+                } else { 
+                    elem.requestFullscreen();
+                }
+            });
+        }
+        
+    </script>
     <title>PixelsBusinessTool</title>
 </head>
 
@@ -27,7 +40,7 @@
     </div>
     <div class = "woodboardContainer" style="left:0px;top:380px;z-index:2">
         <div class="linkWrapper1" style="padding:0px;top:200px;left:-20px;display:inline-flex">
-            <img src="./images/originalImage.png" style="width: 280.154px;height:150px">
+            <img src="./images/originalImage.png" style="width: 280.154px;height:150px" id = "originalImage" onclick="fullscreenImage()">
         </div>
         <br>
         <div class="linkWrapper1" style="padding:0px;top:150px;left:-50px;display:inline-flex">
@@ -54,6 +67,9 @@
             </a>
         </div>
         <br>
+        <p>
+            @MADE2024
+        </p>
         
     </div>
    

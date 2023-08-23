@@ -15,7 +15,7 @@ void setup(){
     pixList.add(loadImage("p"+i+".png"));
   }
   println(charList);
-  origin=loadImage("LimingChen.jpg");
+  origin=loadImage("flower.png");
   origin.resize(800,800);
   origin.loadPixels();
   p = createGraphics(800,800);
@@ -32,7 +32,9 @@ void setup(){
       int value = (int)map(r+b+g,0,672,0,7);
       //p.text(value,x,y);
       p.image(pixList.get(7-value),x,y,pw,ph);
-      
+      //p.fill(color(r,g,b));
+      //p.noStroke();
+      //p.rect(x,y,pw,ph);
       //if(x%2==0 && y%2==0){
       //  p.image(charList.get(7-value),x,y,pw*2,ph*2);
       //}
