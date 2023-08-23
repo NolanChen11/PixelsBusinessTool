@@ -16,9 +16,9 @@
             var elem = document.getElementById("originalImage");
             elem.addEventListener('click', function(e){ 
                 if(document.fullscreenElement){ 
-                    document.exitFullscreen() 
+                    document.webkitCancelFullScreen();
                 } else { 
-                    elem.requestFullscreen();
+                    elem.webkitRequestFullscreen();
                 }
             });
         }
