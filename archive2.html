@@ -5,19 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="p5.min.js"></script>
-    <script src="flowerBG.js"></script>
-    <title>Document</title>
+    <script src="./scripts/p5.min.js"></script>
+    <script src="./scripts/flowerBG.js"></script>
+    <script type="text/javascript">
+        var hasClicked = false;
+        function showImage() {
+            var textbox = document.getElementById('workLabel');
+            textbox.style.display = "none" ;
+            var image = document.getElementsByClassName('resultImage')[0];
+            image.style.opacity = 1;
+            hasClicked = true;
+        }
+    </script>
+    <title>PixelsBusinessTool</title>
 </head>
 
 <body>
     <div class = "container" style="text-align: center; margin-top:30px; margin-bottom:30px">
         <a href="./index.html">
-            <img src="./images/backButton.svg" style="display:inline-flex;width:87px;height:87px">
+            <img src="./images/Back.svg" style="display:inline-flex;width:87px;height:87px;transform:rotate(90deg)">
         </a>
     </div>
     <div class="gallery">
         <img src="./archive/IMG-6499 (1).JPG" alt="" class="resultImage">
+        <img src="./images/workLabel.svg" alt="" class="workLabel" id="workLabel" onclick="showImage()">
     </div>
 </body>
 

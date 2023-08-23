@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload with p5.js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <h1>Image Upload with p5.js</h1>
+    <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+    <button id="uploadButton">Select Image</button>
+    <br>
+    <canvas id="imageCanvas"></canvas>
+
+    <script>
+        let uploadedImage;
+        const canvasWidth = 400;
+        const canvasHeight = 400;
+
+        function setup() {
+            createCanvas(canvasWidth, canvasHeight).parent('imageCanvas');
+            noLoop();
+            document.getElementById('uploadButton').addEventListener('click', () => {
+                document.getElementById('imageUpload').click();
+            });
+            document.getElementById('imageUpload').addEventListener('change', handleImageUpload);
+        }
+
+        function draw() {
+            background(255);
+            if (uploadedImage) {
+                image(uploadedImage, 0, 0, canvasWidth, canvasHeight);
+            }
+        }
+
+        function handleImageUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    loadImage(e.target.result, function (img) {
+                        uploadedImage = img;
+                        resizeCanvas(img.width, img.height);
+                        redraw();
+                    });
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+</body>
+</html>
